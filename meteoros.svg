@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 360" width="1000" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#03040c"/>
+      <stop offset="0.6" stop-color="#0a0a1f"/>
+      <stop offset="1" stop-color="#1b0f3d"/>
+    </linearGradient>
+    <linearGradient id="trailC" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="130" y2="-130">
+      <stop offset="0" stop-color="#e6fcff" stop-opacity="1"/>
+      <stop offset="0.3" stop-color="#00d9ff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00d9ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="trailP" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="130" y2="-130">
+      <stop offset="0" stop-color="#f3e8ff" stop-opacity="1"/>
+      <stop offset="0.3" stop-color="#a855f7" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d9ff"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="ground" cx="0.5" cy="1" r="0.7">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.7"/>
+      <stop offset="0.5" stop-color="#00d9ff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#00d9ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <g id="mC">
+      <line x1="0" y1="0" x2="130" y2="-130" stroke="url(#trailC)" stroke-width="6" stroke-linecap="round"/>
+      <circle r="6" fill="#e6fcff" filter="url(#glow)"/>
+    </g>
+    <g id="mP">
+      <line x1="0" y1="0" x2="130" y2="-130" stroke="url(#trailP)" stroke-width="6" stroke-linecap="round"/>
+      <circle r="6" fill="#f3e8ff" filter="url(#glow)"/>
+    </g>
+  </defs>
+
+  <rect width="1000" height="360" fill="url(#bg)"/>
+
+  <g fill="#ffffff">
+    <circle cx="40" cy="30" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="80" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="210" cy="25" r="1.6" fill="#00d9ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="95" r="1.1"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="380" cy="40" r="1.5" fill="#c4a1ff"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="470" cy="70" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="20" r="1.4" fill="#00d9ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="90" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="720" cy="35" r="1.6" fill="#c4a1ff"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="800" cy="75" r="1"><animate attributeName="opacity" values="1;0.3;1" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="28" r="1.4" fill="#00d9ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="950" cy="85" r="1.1"><animate attributeName="opacity" values="1;0.2;1" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="90" cy="160" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="190" r="1.2" fill="#c4a1ff"><animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="210" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="180" r="1.3" fill="#00d9ff"><animate attributeName="opacity" values="1;0.2;1" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="200" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <rect y="200" width="1000" height="160" fill="url(#ground)">
+    <animate attributeName="opacity" values="0.55;1;0.55" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="900 -120" to="400 420" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+    <use xlink:href="#mC"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="700 -120" to="200 420" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+    <use xlink:href="#mP" transform="scale(1.3)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="1050 -120" to="550 420" dur="2.2s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.2s" begin="1.5s" repeatCount="indefinite"/>
+    <use xlink:href="#mC" transform="scale(0.8)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="500 -120" to="0 420" dur="3.6s" begin="2.1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="3.6s" begin="2.1s" repeatCount="indefinite"/>
+    <use xlink:href="#mP" transform="scale(1.1)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="1000 -120" to="500 420" dur="2.9s" begin="2.7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.9s" begin="2.7s" repeatCount="indefinite"/>
+    <use xlink:href="#mC" transform="scale(1.5)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="300 -120" to="-200 420" dur="2.4s" begin="0.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.4s" begin="0.4s" repeatCount="indefinite"/>
+    <use xlink:href="#mP" transform="scale(0.9)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="800 -120" to="300 420" dur="3.4s" begin="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="3.4s" begin="3.2s" repeatCount="indefinite"/>
+    <use xlink:href="#mC" transform="scale(1.2)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="600 -120" to="100 420" dur="2.1s" begin="1.1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.1s" begin="1.1s" repeatCount="indefinite"/>
+    <use xlink:href="#mP" transform="scale(0.7)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="950 -120" to="450 420" dur="3s" begin="1.9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="3s" begin="1.9s" repeatCount="indefinite"/>
+    <use xlink:href="#mP" transform="scale(1)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="400 -120" to="-100 420" dur="2.7s" begin="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.7s" begin="3.5s" repeatCount="indefinite"/>
+    <use xlink:href="#mC" transform="scale(1.1)"/>
+  </g>
+
+  <text x="500" y="165" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="700" fill="url(#tg)" filter="url(#glow)">Olá, eu sou Guilherme!</text>
+  <text x="500" y="215" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#d6e4ff">Estudante | Desenvolvedor de Software</text>
+
+  <g font-family="Consolas, Courier New, monospace" font-size="24" font-weight="700" fill="#00d9ff" text-anchor="middle">
+    <text x="500" y="285" opacity="0">Desenvolvimento Web
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.03;0.22;0.25;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="285" opacity="0" fill="#a855f7">Desenvolvimento Mobile Android
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.28;0.47;0.5;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="285" opacity="0">Full Stack
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.53;0.72;0.75;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="285" opacity="0" fill="#a855f7">Sempre aprendendo e evoluindo
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.75;0.78;0.97;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
